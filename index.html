@@ -1,12 +1,216 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emprendimiento</title>
+    <title>Ventas de Bicicletas | Tu viaje comienza aquí</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <!-- Header / Barra de Navegación -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Ventas<span>Bikes</span></a>
+            <nav class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#modelos">Modelos</a>
+                <a href="#beneficios">¿Por qué elegirnos?</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <a href="https://wa.me/526981144545?text=Hola,%20estoy%20interesado%20en%20comprar%20una%20bicicleta" target="_blank" class="btn-nav">Cotizar por WhatsApp</a>
+        </div>
+    </header>
+
+    <!-- Sección Hero (Principal) -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="badge">Nuevos Modelos 2026</span>
+                <h1>Pedalea hacia tu próxima <span>aventura</span></h1>
+                <p>Descubre nuestra exclusiva gama de bicicletas diseñadas para la ciudad, la montaña y la ruta. Calidad, resistencia y diseño al mejor precio.</p>
+                <div class="hero-buttons">
+                    <a href="#modelos" class="btn btn-primary">Ver Modelos</a>
+                    <a href="https://wa.me/526981144545?text=Hola,%20quisiera%20más%20información%20sobre%20sus%20bicicletas" target="_blank" class="btn btn-outline">Hablar con un asesor</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=800&q=80" alt="Bicicleta de alta gama">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Modelos (Catálogo con Efecto Giro / Flip Card) -->
+    <section id="modelos" class="models">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Modelos Destacados</h2>
+                <p>Pasa el cursor sobre cualquier tarjeta para ver los detalles técnicos</p>
+            </div>
+            <div class="grid-models">
+                
+                <!-- Tarjeta 1 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Frente de la Tarjeta -->
+                        <div class="flip-card-front">
+                            <div class="card-img">
+                                <img src="https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?auto=format&fit=crop&w=600&q=80" alt="Bicicleta de Montaña">
+                            </div>
+                            <div class="card-body">
+                                <span class="category">Montaña / MTB</span>
+                                <h3>Ruta Extreme Pro</h3>
+                                <p>Suspensión delantera avanzada y cuadro de aluminio ultraligero.</p>
+                                <div class="card-footer">
+                                    <span class="price">$6,500 MXN</span>
+                                    <span class="hint-flip">Girar 🔄</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Reverso de la Tarjeta -->
+                        <div class="flip-card-back">
+                            <h3>Ruta Extreme Pro</h3>
+                            <ul class="specs-list">
+                                <li><strong>Cuadro:</strong> Aluminio hidroformado</li>
+                                <li><strong>Frenos:</strong> Disco hidráulico Shimano</li>
+                                <li><strong>Velocidades:</strong> 24 pasos (3x8)</li>
+                                <li><strong>Rodada:</strong> 29 pulgadas</li>
+                            </ul>
+                            <p class="back-desc">Ideal para terrenos rocosos y caminos de alta exigencia.</p>
+                            <a href="https://wa.me/526981144545?text=Hola,%20me%20interesa%20comprar%20la%20Ruta%20Extreme%20Pro" target="_blank" class="btn-card-back">Comprar por WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Frente de la Tarjeta -->
+                        <div class="flip-card-front">
+                            <div class="card-img">
+                                <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=600&q=80" alt="Bicicleta Urbana">
+                            </div>
+                            <div class="card-body">
+                                <span class="category">Urbana / City</span>
+                                <h3>Urban Cruiser V2</h3>
+                                <p>Comodidad absoluta para tus trayectos diarios por la ciudad.</p>
+                                <div class="card-footer">
+                                    <span class="price">$4,800 MXN</span>
+                                    <span class="hint-flip">Girar 🔄</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Reverso de la Tarjeta -->
+                        <div class="flip-card-back">
+                            <h3>Urban Cruiser V2</h3>
+                            <ul class="specs-list">
+                                <li><strong>Cuadro:</strong> Acero reforzado estilo vintage</li>
+                                <li><strong>Accesorios:</strong> Incluye canastilla y salpicaderas</li>
+                                <li><strong>Velocidades:</strong> 7 pasos Shimano Tourney</li>
+                                <li><strong>Rodada:</strong> 26 pulgadas</li>
+                            </ul>
+                            <p class="back-desc">Perfecta para ir al trabajo o pasear por el parque con elegancia.</p>
+                            <a href="https://wa.me/526981144545?text=Hola,%20me%20interesa%20comprar%20la%20Urban%20Cruiser%20V2" target="_blank" class="btn-card-back">Comprar por WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Frente de la Tarjeta -->
+                        <div class="flip-card-front">
+                            <div class="card-img">
+                                <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=600&q=80" alt="Bicicleta de Ruta">
+                            </div>
+                            <div class="card-body">
+                                <span class="category">Velocidad / Ruta</span>
+                                <h3>Speed Runner 300</h3>
+                                <p>Diseñada para romper récords de velocidad en carretera.</p>
+                                <div class="card-footer">
+                                    <span class="price">$8,200 MXN</span>
+                                    <span class="hint-flip">Girar 🔄</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Reverso de la Tarjeta -->
+                        <div class="flip-card-back">
+                            <h3>Speed Runner 300</h3>
+                            <ul class="specs-list">
+                                <li><strong>Cuadro:</strong> Fibra de carbono aerodinámico</li>
+                                <li><strong>Frenos:</strong> Pinzas de doble pivote de ruta</li>
+                                <li><strong>Velocidades:</strong> 18 pasos (2x9)</li>
+                                <li><strong>Peso total:</strong> 9.8 kg</li>
+                            </ul>
+                            <p class="back-desc">Construida para ciclistas apasionados por la velocidad sobre pavimento.</p>
+                            <a href="https://wa.me/526981144545?text=Hola,%20me%20interesa%20comprar%20la%20Speed%20Runner%20300" target="_blank" class="btn-card-back">Comprar por WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Beneficios -->
+    <section id="beneficios" class="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>¿Por qué elegirnos?</h2>
+                <p>Garantizamos la mejor experiencia sobre dos ruedas</p>
+            </div>
+            <div class="grid-benefits">
+                <div class="benefit-box">
+                    <div class="icon">🛡️</div>
+                    <h3>Garantía Total</h3>
+                    <p>Todas nuestras bicicletas cuentan con garantía directa en cuadros y componentes.</p>
+                </div>
+                <div class="benefit-box">
+                    <div class="icon">🛠️</div>
+                    <h3>Armado Profesional</h3>
+                    <p>Se entregan completamente ajustadas, lubricadas y listas para rodar de inmediato.</p>
+                </div>
+                <div class="benefit-box">
+                    <div class="icon">🚀</div>
+                    <h3>Envíos Seguros</h3>
+                    <p>Llegamos a la puerta de tu hogar con embalaje protegido contra cualquier daño.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer id="contacto" class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Ventas de Bicicletas</h3>
+                <p>Tu tienda de confianza para vivir la pasión del ciclismo.</p>
+            </div>
+            <div class="footer-quote">
+                <p class="quote">"La vida es como montar en bicicleta: para mantener el equilibrio, debes seguir pedaleando."</p>
+                <span class="author">— Albert Einstein</span>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto Directo</h4>
+                <p>📞 Tel / WhatsApp: +52 698 114 4545</p>
+                <p>📍 Envíos disponibles</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ventas de Bicicletas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/526981144545?text=Hola,%20vengo%20de%20su%20sitio%20web%20y%20quiero%20más%20información" target="_blank" class="whatsapp-float" aria-label="Contacto por WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="whatsapp-icon">
+            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.139 8.047l-2.279 8.324 8.528-2.242c2.329 1.272 4.982 1.944 7.612 1.944 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.333c-2.41 0-4.776-0.641-6.837-1.859l-0.49-0.29-5.093 1.339 1.36-4.966-0.318-0.509c-1.314-2.102-2.011-4.551-2.011-7.051 0-7.352 5.981-13.333 13.333-13.333s13.333 5.981 13.333 13.333c0 7.352-5.981 13.333-13.333 13.333zM21.968 19.462c-0.328-0.164-1.942-0.958-2.244-1.068-0.302-0.11-0.522-0.164-0.742 0.164s-0.852 1.068-1.044 1.286c-0.192 0.219-0.384 0.246-0.712 0.082-0.328-0.164-1.385-0.51-2.639-1.628-0.975-0.869-1.633-1.942-1.825-2.27-0.192-0.328-0.02-0.505 0.144-0.669 0.148-0.147 0.328-0.384 0.492-0.576 0.164-0.192 0.219-0.328 0.328-0.548 0.11-0.219 0.055-0.411-0.027-0.576s-0.742-1.789-1.017-2.447c-0.268-0.639-0.541-0.552-0.742-0.562l-0.632-0.011c-0.219 0-0.576 0.082-0.877 0.411s-1.151 1.124-1.151 2.741c0 1.617 1.178 3.177 1.342 3.396 0.164 0.219 2.318 3.541 5.619 4.965 0.784 0.339 1.396 0.542 1.873 0.695 0.788 0.251 1.505 0.215 2.071 0.13 0.632-0.095 1.942-0.795 2.216-1.562 0.274-0.767 0.274-1.425 0.192-1.562s-0.31-0.219-0.638-0.383z"/>
+        </svg>
+    </a>
+
 </body>
 </html>
